@@ -92,6 +92,9 @@
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
+    "jms/i18n-routing-bundle": {
+        "version": "dev-master"
+    },
     "knplabs/knp-components": {
         "version": "1.3.5"
     },
@@ -100,6 +103,9 @@
     },
     "monolog/monolog": {
         "version": "1.23.0"
+    },
+    "nikic/php-parser": {
+        "version": "v4.0.1"
     },
     "ocramius/proxy-manager": {
         "version": "2.2.0"
