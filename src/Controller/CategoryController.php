@@ -15,7 +15,13 @@ class CategoryController extends Controller
     /**
      * Finds and displays a category entity.
      *
-     * @Route("/category/{slug}/{page}", name="category.show", defaults={"page": 1})
+     * @Route(
+     *     "/category/{slug}/{page}",
+     *     name="category.show",
+     *     defaults={"page": 1},
+     *     requirements={"page" = "\d+"}
+     * )
+     *
      * @Method("GET")
      *
      * @param Category $category
@@ -35,9 +41,9 @@ class CategoryController extends Controller
             $this->getParameter('max_jobs_on_category')
         );
 
-        return $this->render('category/show.html.twig', array(
+        return $this->render('category/show.html.twig', [
             'category' => $category,
             'activeJobs' => $activeJobs,
-        ));
+        ]);
     }
 }
